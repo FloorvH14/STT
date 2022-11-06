@@ -4,8 +4,14 @@ Using this directory, you can use the coqui stt to run inference and recognize E
 
 ## Installation
 
-Clone this git to your personal device.
+Clone this git to your personal device. Make sure stt is installed (Coqui STT  1.4.0). You can do this by using the following command in the command line/terminal:
+
+```bash
+pip install stt
+```
 [Download](https://coqui.ai/english/coqui/v1.0.0-huge-vocab) the vocabulary (the .scorer file) for the model and save it in the directory test_data.
+
+In case you run into any other issues, check [here](https://stt.readthedocs.io/en/latest/DEPLOYMENT.html#download-models) for more detailed instrucions and documentions of stt. 
 
 ## Usage
 
@@ -25,3 +31,7 @@ Running inference.
 no i do this is a test
 Inference took 4.796s for 5.759s audio file.
 ```
+
+## result evaluation
+
+The orginal text in test.wav is "hello, hello, this is a test". Although the transcription "no i do this is a test" is not perfect, it should be noted the first part of the text ("hello, hello") is of low quality. Therefore I think this is a very decent result.
