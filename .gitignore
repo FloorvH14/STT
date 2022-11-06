@@ -43,3 +43,4 @@ convert_graphdef_memmapped_format
 native_client/swift/deepspeech_ios.framework/deepspeech_ios
 .github/actions/check_artifact_exists/node_modules/
 /.vs
+test_data/huge-vocabulary.scorer
