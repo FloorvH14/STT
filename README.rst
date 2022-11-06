@@ -34,6 +34,8 @@
 * Small-footprint acoustic model.
 * Bindings for various programming languages.
 
+**To quickly run inference on an English language mdoel, see test_data**
+
 `Quickstart <https://stt.readthedocs.io/en/latest/#quickstart>`_
 ================================================================
 
