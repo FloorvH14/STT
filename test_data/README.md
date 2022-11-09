@@ -21,7 +21,7 @@ python test_data\test.py
 ```
 in the terminal, or going to the file and manually running it.
 
-If instead of cloning the directory you want to download the files, [create] (https://docs.python.org/3/library/venv.html) a python virtual environment and run the following in the command line:
+If instead of cloning the directory you want to download the files, [create](https://docs.python.org/3/library/venv.html) a python virtual environment and run the following in the command line:
 
 ```bash
 python stt --model test_data/model.tflite --scorer test_data/huge-vocabulary.scorer --audio test_data/test.wav
