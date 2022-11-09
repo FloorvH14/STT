@@ -24,7 +24,7 @@ in the terminal, or going to the file and manually running it.
 If instead of cloning the directory you want to download the files, [create](https://docs.python.org/3/library/venv.html) a python virtual environment and run the following in the command line:
 
 ```bash
-python stt --model test_data/model.tflite --scorer test_data/huge-vocabulary.scorer --audio test_data/test.wav
+stt --model test_data/model.tflite --scorer test_data/huge-vocabulary.scorer --audio test_data/test.wav
 ```
 
 Make sure that the path to the files and filenames correspond to the files and filenames on your computer.
@@ -48,6 +48,6 @@ no i do this is a test
 Inference took 4.796s for 5.759s audio file.
 ```
 
-## result evaluation
+## Result evaluation
 
 The orginal text in test.wav is "hello, hello, this is a test". Although the transcription "no i do this is a test" is not perfect, it should be noted the first part of the text ("hello, hello") is of low quality. Therefore I think this is a very decent result.
