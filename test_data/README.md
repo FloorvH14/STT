@@ -4,12 +4,26 @@ Using this directory, you can use the coqui stt to run inference and recognize E
 
 ## Installation
 
-Clone this git to your personal device. Make sure stt is installed (Coqui STT  1.4.0). You can do this by using the following command in the command line/terminal:
+Clone this git to your personal device. Check [here](https://code.visualstudio.com/docs/sourcecontrol/github) how to clone using Visual Studio Code or [https://www.folkstalk.com/tech/how-to-run-a-code-in-github-with-code-examples/] for a more general explanation. Make sure stt is installed (Coqui STT  1.4.0). You can do this by using the following command in the command line/terminal:
 
 ```bash
 pip install stt
 ```
-[Download](https://coqui.ai/english/coqui/v1.0.0-huge-vocab) the vocabulary (the .scorer file) for the model and save it in the directory test_data.
+[Download](https://coqui.ai/english/coqui/v1.0.0-huge-vocab) the vocabulary (the .scorer file) for the model and save it in the directory test_data. The file is on the bottom of the page and can be downloaded by clicking on the name of the file.
+
+Then, run the test.py file, either by running 
+```bash
+python test_data\test.py
+```
+in the terminal, or going to the file and manually running it.
+
+If instead of cloning the directory you want to download the files, [create a python virtual environment] (https://docs.python.org/3/library/venv.html) and run the following in the command line:
+
+```bash
+python stt --model test_data/model.tflite --scorer test_data/huge-vocabulary.scorer --audio test_data/test.wav
+```
+
+Make sure that the path to the files and filenames correspond to the files and filenames on your computer.
 
 In case you run into any other issues, check [here](https://stt.readthedocs.io/en/latest/DEPLOYMENT.html#download-models) for more detailed instrucions and documentions of stt. 
 
