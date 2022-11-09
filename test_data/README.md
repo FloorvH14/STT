@@ -11,7 +11,11 @@ pip install stt
 ```
 [Download](https://coqui.ai/english/coqui/v1.0.0-huge-vocab) the vocabulary (the .scorer file) for the model and save it in the directory test_data. The file is on the bottom of the page and can be downloaded by clicking on the name of the file.
 
-Then, run the test.py file, either by running 
+
+
+## Usage
+
+Run test.py in the test_data directory, either by running 
 ```bash
 python test_data\test.py
 ```
@@ -27,9 +31,7 @@ Make sure that the path to the files and filenames correspond to the files and f
 
 In case you run into any other issues, check [here](https://stt.readthedocs.io/en/latest/DEPLOYMENT.html#download-models) for more detailed instrucions and documentions of stt. 
 
-## Usage
-
-Run test.py in the test_data directory. A .wav file is provided. If you want to use your own audio, make sure to upload a 16000 Hz file, or install [SoX](https://sox.sourceforge.net/).
+A .wav file is provided. If you want to use your own audio, make sure to upload a 16000 Hz file, or install [SoX](https://sox.sourceforge.net/).
 
 When succesful, the output should look like this:
 
